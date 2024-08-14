@@ -9,48 +9,74 @@ body {
 }
 
 .calculator {
-    width: 320px;
+    width: 340px;
     background-color: #333;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .display {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #result {
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #000;
     color: #fff;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: right;
-    padding: 10px;
+    padding: 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: inset 0 -5px 10px rgba(255, 255, 255, 0.1);
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
 }
 
 button {
-    height: 60px;
+    height: 80px;
     font-size: 1.5em;
     border: none;
-    border-radius: 5px;
-    background-color: #666;
+    border-radius: 50%;
+    background-color: #505050;
     color: white;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+button:active {
+    background-color: #757575;
+    box-shadow: none;
+    transform: translateY(4px);
 }
 
 button:nth-child(4n) {
     background-color: #ff9500;
 }
 
-button:active {
-    background-color: #999;
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3) {
+    background-color: #d4d4d2;
+    color: black;
+}
+
+button:nth-child(4n):active {
+    background-color: #ffb347;
+}
+
+button:nth-child(1):active,
+button:nth-child(2):active,
+button:nth-child(3):active {
+    background-color: #e0e0e0;
+}
+
+button.zero {
+    grid-column: span 2;
 }
