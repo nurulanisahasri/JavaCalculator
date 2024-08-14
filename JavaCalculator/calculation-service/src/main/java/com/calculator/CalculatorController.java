@@ -14,11 +14,11 @@ public class CalculatorController {
     ) {
         switch (operation) {
             case "add":
-                return num1 + numb2;
+                return num1 + num2;
             case "minus":
-                return num1 - numb2;
+                return num1 - num2;
             case "multiply":
-                return num1 * numb2;
+                return num1 * num2;
             case "divide":
                 if (num2 != 0) {
                     return num1 / num2;

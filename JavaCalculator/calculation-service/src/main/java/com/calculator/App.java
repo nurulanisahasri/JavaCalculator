@@ -1,19 +1,3 @@
-/*package com.calculator;
-
-import java.util.Scanner;
-
-public class App 
-{
-    public static void main(String[] args) { //main method. the code inside will be executed when run
-
-    Scanner scanner = new Scanner(System.in); //iniliaze Scanner. 'Scanner' object to take input from user and print welcome message
-
-    System.out.println("Calculator";)
-    System.out.println("__________";)
-
-    }
-}*/
-
 package com.calculator;
 
 import java.util.Scanner;
