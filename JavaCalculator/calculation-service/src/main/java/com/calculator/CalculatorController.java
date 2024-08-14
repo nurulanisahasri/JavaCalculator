@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api")
 public class CalculatorController {
 
+    @GetMapping("/test")
+    public String testEndpoint() {
+    return "Server is running";
+}
+
+
     @GetMapping("/calculate")
     public double calculate(
         @RequestParam("num1") double num1,
